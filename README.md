@@ -1,5 +1,5 @@
-# ARM_SAM3X8E_FUN
-Tutorial ARM SAM3X8E (UART with PDC, TC0 timer Interrupet, Port PIOB with Interrupt)
+## Arduino Due in Atmel Studio with ARM SAM3X8E
+- uses UART with PDC, TC0 timer Interrupt, Port PIOB with Interrupt
 - for Arduino Due in Atmel Studio 7 - gcc c compiler
 
 ## How To
@@ -11,7 +11,7 @@ Tutorial ARM SAM3X8E (UART with PDC, TC0 timer Interrupet, Port PIOB with Interr
    - send 'b' - led should be blinking slow
    - short Arduino pin 22 to ground - message 'Interrupt...' should appear on your serial console
 
-## What id does
+## What it does
 - uses Atmel's SystemInit() to initialize crystal oscillator, PLL loop @84MHz, switch to APLL as master clock
 - initializes PIOB pin PB27 as output (Arduino Yellow Led)
 - initializes PIOB pin PB26 as input (with slow clock debouncing and interrupt on falling edge)(Arduino Pin22)
